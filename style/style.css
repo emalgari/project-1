@@ -6,11 +6,13 @@
     font-family: 'Barlow', sans-serif;
 }
 
+/***************************Body********************************/
 body{
     background-color: #2dca4b;
 }
+/***************************Body********************************/
 
-/**************header section*************/
+/************************Navigation Bar**********************/
 header{
     padding: 0 20px 0 20px;
     display: flex;
@@ -29,9 +31,6 @@ header .logo a img{
 }
 header .logo a img:hover{
     border: 1px solid rgb(182, 37, 34);
-}
-header nav{
-    /*border: 2px solid orange;*/
 }
 header nav ul{
     display: flex;
@@ -60,10 +59,9 @@ header nav li a:hover{
 .contact-btn:hover{
     background-color: rgb(182, 37, 34);
 }
+/************************Navigation Bar End**********************/
 
-/**************header section end***********/
-
-/************** Hero section *******************/
+/***************************Hero section************************/
 .hero{
     width: 100vw;
     height: 750px;
@@ -72,8 +70,7 @@ header nav li a:hover{
     background-size: cover;
 }
 
-/**************main-container Start**************/
-
+/**************main-container Start***********/
 .main-container{
     margin: 0px 10px 0 10px;
     height: 600px;
@@ -124,19 +121,16 @@ header nav li a:hover{
     object-fit: cover;
     aspect-ratio: 1/1;
 }
-
 /**************main-container End**************/
 
-/************** Hero section end*******************/
+/***************************Hero section End************************/
 
-/************** Details Box start*******************/
+/***************************Details Box Section***********************/
 h3{
     margin-bottom: 40px;
     text-align: center;
 }
 .details-box{
-    /**border: 5px solid red;**/
-    /*background-color: #2dca4b;*/
     padding: 120px;
     display: flex;
     flex-direction: column;
@@ -190,21 +184,16 @@ h3{
 .our-work .btn .btn-learn-more a{
     color:white;
 }
-.price-details{
-    /*border: 3px solid orangered;*/
-}
 table, th, td{
     border: 1px solid gray;
     border-collapse: collapse;
     height: 60px;
     text-align: center;
 }
-/************** Details Box end*******************/
+/***************************Details Box Section End***********************/
 
-/************** price-list start *******************/
-/************** price-list end*******************/
 
-/************** footer start *******************/
+/***************************footer start*********************************/
 footer{
     height: 300px;
     background-image: url(../images/hero.svg);
@@ -233,4 +222,4 @@ footer p{
     display: flex;
     gap: 15px;
 }
-/************** footer end*******************/
+/***************************footer End*********************************/
