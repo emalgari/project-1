@@ -19,6 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1; /* Added to make sure its above all other elements on the page <3  */
     width: 100vw;
     background-color: #14be33;
     background-image: url(../images/hero.svg);
@@ -191,8 +192,78 @@ table, th, td{
     text-align: center;
 }
 /***************************Details Box Section End***********************/
-
-
+/***************************Gallery Section styles **********************/
+/************ The Background of the Gallery page.  */
+.hero-bg-gallery{
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-image: url(../images/hero.svg);
+    background-size: cover;
+}
+/* The Container for all designs in the gallery */
+.gallery-container{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr repeat(7, 0.3fr) 2fr;
+    grid-template-rows: 0.5fr 1fr repeat(4, 0.3fr) 0.5fr;
+    gap: 10px;
+}
+/* The information of the images in this gallery */
+.thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+	transition: all 0.5s ease-in-out; 
+    box-shadow: 5px 5px 5px rgba(3, 94, 40, 0.995); 
+}
+/* The hover to zoom effect of the images */
+.thumbnail:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    cursor: pointer;
+}
+/* The text part of the gallery */
+.gallery-container h1{
+    text-align: center;
+    grid-area: 2 / 1 / 2 / 2;
+}
+.gallery-container h2{
+    text-align: center;
+    grid-area: 3 / 1 / 3 / 2;
+}
+/* The GRID position of the images inside of the gallery-container. */
+.thumbnail:nth-child(3){
+    grid-area: 2 / 6 / 3 / 8;
+}
+.thumbnail:nth-child(4){
+    grid-area: 3 / 6 / 4 / 8;
+}
+.thumbnail:nth-child(5){
+    grid-area: 2 / 2 / 4 / 6;
+}
+.thumbnail:nth-child(6){
+    grid-area: 4 / 2 / 6 / 6;
+}
+.thumbnail:nth-child(7){
+    grid-area: 2 / 8 / 3 / 10;
+}
+.thumbnail:nth-child(8){
+    grid-area: 4 / 6 / 5 / 8;
+}
+.thumbnail:nth-child(9){
+    grid-area: 4 / 8 / 5 / 10;
+}
+.thumbnail:nth-child(10){
+    grid-area: 3 / 8 / 4 / 10;
+}
+.thumbnail:nth-child(11){
+    grid-area: 5 / 8 / 6 / 10;
+}
+.thumbnail:nth-child(12){
+    grid-area: 5 / 6 / 6 / 8;
+}
+/***************************End of Gallery section ***********************/
 /***************************footer start*********************************/
 footer{
     height: 300px;
