@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    /*z-index: 1;*/ /* Added to make sure its above all other elements on the page <3  */
+    /*z-index: 1; /* Added to make sure its above all other elements on the page <3  */
     width: 100vw;
     background-color: #14be33;
     background-image: url(../images/hero.svg);
@@ -218,6 +218,9 @@ table, th, td{
 
 /***************************Gallery Section styles **********************/
 /************ The Background of the Gallery page.  */
+.put--me--above--everything {
+    z-index: 1;
+}
 .hero-bg-gallery{
     width: 100vw;
     padding-top: 50px;
