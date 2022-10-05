@@ -359,11 +359,11 @@ table, th, td{
     color: white;
     font-size: 24px;
     font-weight: bold;
-    background-color: #625204;
+    background-color: rgb(102, 17, 17);
 }
 .hero .contact-us .form .btn:hover{
     cursor: pointer;
-    background-color: #85700b;
+    background-color: rgb(182, 37, 34);
     color: bisque;
     transition: 0.3s ease-in-out;
 }
