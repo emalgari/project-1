@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 1; /* Added to make sure its above all other elements on the page <3  */
+    /*z-index: 1;*/ /* Added to make sure its above all other elements on the page <3  */
     width: 100vw;
     background-color: #14be33;
     background-image: url(../images/hero.svg);
@@ -31,7 +31,8 @@ header .logo a img{
     width: 10%;
 }
 header .logo a img:hover{
-    border: 1px solid rgb(182, 37, 34);
+    background-color: rgb(31, 149, 31);
+    transition: all 0.3s ease-in-out;
 }
 header nav ul{
     display: flex;
@@ -49,6 +50,7 @@ header nav li a, i{
 header nav li a:hover{
     color: rgb(182, 37, 34);
     border-bottom: 1px solid rgb(182, 37, 34);
+    transition: all 0.3s ease-in-out;
 }
 .contact-btn{
     Width: 170px;
@@ -57,8 +59,15 @@ header nav li a:hover{
     border-style: none;
     background-color:rgb(102, 17, 17);
 }
-.contact-btn:hover{
+header nav li .contact-btn a{
+    color:whitesmoke; 
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+}
+header nav li .contact-btn:hover{
     background-color: rgb(182, 37, 34);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 /************************Navigation Bar End**********************/
 
@@ -73,16 +82,19 @@ header nav li a:hover{
 
 /**************main-container Start***********/
 .main-container{
-    margin: 0px 10px 0 10px;
-    height: 600px;
+    margin: 0 10% 1% 10%;
+    max-height: 600px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 .hero-txt{
-    width: 640px;
-    height: 300px;
+    max-width: 640px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -99,6 +111,7 @@ header nav li a:hover{
 }
 .work-btn:hover{
     background-color: #85700b;
+    transition: all 0.3s ease-in-out;
 }
 .work-btn a{
     color: white;
@@ -110,14 +123,19 @@ header nav li a:hover{
 }
 .price-list:hover{
     color: blue;
+    transition: all 0.3s ease-in-out;
 }
-.img-holder{
-    width: 582px;
-    height: 300px;
+.holder{
+    max-width: 582px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
 }
-.img-holder img{
-    width: 582px;
-    height: 350px;
+.holder img{
+    max-width: 582px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
     border-radius: 10px;
     object-fit: cover;
     aspect-ratio: 1/1;
@@ -158,17 +176,21 @@ h3{
 .our-work .boxes div{
     border: 1px solid black;
     border-radius: 10px;
-    width: 320px;
-    height: 320px;
+    max-width: 320px;
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .our-work .boxes div figure img{
     padding: 5px;
-    width:310px;
+    max-width: 310px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
     border-radius: 12px;
-    height: 300px;
     object-fit: cover;
     aspect-ratio: 1/1;
 }
@@ -181,6 +203,7 @@ h3{
 }
 .our-work .btn .btn-learn-more:hover{
     background-color: #85700b;
+    transition: all 0.3s ease-in-out;
 }
 .our-work .btn .btn-learn-more a{
     color:white;
@@ -192,6 +215,7 @@ table, th, td{
     text-align: center;
 }
 /***************************Details Box Section End***********************/
+
 /***************************Gallery Section styles **********************/
 /************ The Background of the Gallery page.  */
 .hero-bg-gallery{
@@ -264,6 +288,76 @@ table, th, td{
     grid-area: 5 / 6 / 6 / 8;
 }
 /***************************End of Gallery section ***********************/
+
+
+/***************************Our Team-members***********************/
+.our-team{
+    padding: 10%;
+    max-height: 600px;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.our-team figure{
+    width: 400px;
+    height: auto;
+}
+.our-team figure figcaption{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: bold;
+}
+.our-team figure img{
+    width:100%;
+    height: 100%;
+    border-radius: 200px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+/***************************Our Team-members end***********************/
+
+
+/*******************Contact Us*******************/
+ .hero .contact-us{
+    margin:5% 20% 0 20%;
+    
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.hero .contact-us .form{
+    border: 1px solid rgb(61, 61, 71);
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero .contact-us .form .btn{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #625204;
+}
+.hero .contact-us .form .btn:hover{
+    cursor: pointer;
+    background-color: #85700b;
+    color: bisque;
+    transition: 0.3s ease-in-out;
+}
+/*******************Contact Us end*******************/
+
+
 /***************************footer start*********************************/
 footer{
     height: 300px;
